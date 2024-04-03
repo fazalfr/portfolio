@@ -1,5 +1,23 @@
-    // network connection //
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyrSpZXrqpjFjyjzbEU4sA24fcnMHVnJuPJ4DZH4P910ElVeWRXrC3Jiw6sYPq1Wnb1/exec';
+const form = document.forms['contact-form'];
 
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        if (response.ok) {
+            alert("Thank you! your form is submitted successfully.");
+            form.reset(); // Clear the form inputs
+            window.location.reload();
+        } else {
+            throw new Error('Network response was not ok.');
+        }
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+
+// network connection //
 document.getElementById("linkedin").onclick = function () {
     location.href = "https://www.linkedin.com/in/fasalfr/";
 };
@@ -53,19 +71,19 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Django Developer", "Data Analyst", "ML | EXCEL"],
+        strings: ["Django Developer", "Data Analyst", "Web Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Django Developer", "Data Analyst", "ML | EXCEL"],
+        strings: ["Django Developer", "Data Analyst", "Web Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
-
+ 
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -88,12 +106,4 @@ $(document).ready(function(){
             }
         }
     });
-
-
-
-
-
-
-
-
 });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Fasalu Rahman K</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -53,12 +53,19 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/user.png" alt="">
+                    <img src="images/usr.png" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Fasal and I'm a <span class="typing-2"></span></div>
-                    <p>I am an aspiring programmer with skill set equivalent to Python Developer, Data Science & Artificial Intelligence and web designing. I have strong technical skills in Python, Numpy, Pandas, Django, SQL, Excel etc. I am looking for opportunities in a stable organization which would help me in enhancing my skills, strengthening my knowledge and also realizing my potential.</p>
-                    <a href="pdf/Fasalu Rahman.pdf" download>Download CV</a>
+                    <p>As an aspiring programmer proficient in Python development, 
+                        Data Science, Artificial Intelligence, and web design, I bring a robust skill set to the table. 
+                        With expertise in Python, Numpy, Pandas, Django, SQL, Excel, and more, 
+                        I am well-equipped to contribute effectively to any project or team. 
+                        My goal is to secure a position within a stable organization where I can 
+                        further develop my skills, deepen my knowledge, and maximize my potential. 
+                        I am eager to leverage my technical prowess to drive innovation and success 
+                        while also growing professionally.</p>
+                    <a href="pdf/Fasalu Rahman Resume.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
@@ -101,28 +108,17 @@
             <h2 class="title">My Experience & skills.</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">Experiences.</div>
-                    
-                    <p>&nbsp; 	&nbsp;- Junior Software Developer at Soften Technologies</p><br>
-
-                    
-                    <div class="text">Skills.</div>
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Databases :</span> MySQL.</p>
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Frame work : </span>Django.</p>
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Version control :</span> GitHub. </p>
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Libraries :</span> Numpy, Pandas. </p>
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Visualization Tools :</span> Excel, Tableau.</p>
-                    
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Programming Languages : </span> Python, SQL</p>
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- Web Technologies :</span> HTML, CSS, JavaScript </p>
-
-                    
-
-
-                    <p><span style="color:rgb(215 85 85); font-weight:bold">&nbsp; &nbsp;- IDE/Development Tools : </span>PyCharm,VScode, Jupyter Notebook</p>
-
-
-                    <!-- <a href="#">Read more</a> -->
+                    <!-- <div class="text">Experiences.</div>
+                    <p>&#9642; Junior Software Developer at Soften Technologies</p><br> -->
+                    <div class="text"><u>Skills</u></div>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Databases :</span> MySQL.</p>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Frame work : </span>Django.</p>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Version control :</span> GitHub. </p>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Libraries :</span> Numpy, Pandas. </p>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Visualization Tools :</span> Excel, Tableau.</p>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Programming Languages : </span> Python, SQL</p>
+                    <p><span style="color:rgb(215 85 85); font-weight:bold">&#9672; Web Technologies :</span> HTML, CSS, JavaScript </p>
+                
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -164,8 +160,7 @@
             </div>
         </div>
     </section>
-
-
+    
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
@@ -181,7 +176,7 @@
                                 <div class="head">Name</div>
                                 <div class="sub-title">Fasalu Rahman.K</div>
                             </div>
-                        </div>
+                        </div> 
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
@@ -198,7 +193,31 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="column right">
+                    <div class="text">Message me</div>
+                    <form method="post" action="" name="contact-form">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" name="name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" name="subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" value="submit" id="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="column right">
                     <div class="text">Message me</div>
                     <form action="#">
                         <div class="fields">
@@ -219,7 +238,7 @@
                             <button type="submit" href="mailto: fazalkarat@gmail.com">Send message</button>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
